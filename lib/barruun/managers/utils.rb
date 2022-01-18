@@ -24,8 +24,8 @@ module Barruun
         end
       end
 
-      def options_string
-        @config.options.map { |k, v| "--#{k}=#{v}" }.compact.join(" ")
+      def options_string(options)
+        options.map { |k, v| "--#{k}=#{v}" }.compact.join(" ")
       end
     end
   end

@@ -8,7 +8,7 @@ module Barruun
         include Barruun::Managers::Utils
 
         def create
-          `gcloud alpha storage buckets create #{options_string} #{@config.name}`
+          `gcloud alpha storage buckets create #{options_string(@config.options)} #{@config.name}`
         end
 
         def exist?

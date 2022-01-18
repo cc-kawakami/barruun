@@ -8,7 +8,7 @@ module Barruun
         include Barruun::Managers::Utils
 
         def create
-          `gcloud logging sinks create #{@config.name} #{@config.destination} #{options_string}`
+          `gcloud logging sinks create #{@config.name} #{@config.destination} #{options_string(@config.options)}`
         end
 
         def exist?
