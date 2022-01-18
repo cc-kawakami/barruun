@@ -1,25 +1,13 @@
 PATH
   remote: .
   specs:
-    barruun (0.1.5)
-      active_hash
+    barruun (0.1.6)
       thor (~> 1.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    active_hash (3.1.0)
-      activesupport (>= 5.0.0)
-    activesupport (7.0.1)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 1.6, < 2)
-      minitest (>= 5.1)
-      tzinfo (~> 2.0)
-    concurrent-ruby (1.1.9)
     diff-lcs (1.5.0)
-    i18n (1.8.11)
-      concurrent-ruby (~> 1.0)
-    minitest (5.15.0)
     power_assert (1.1.7)
     rake (13.0.6)
     rspec (3.10.0)
@@ -39,8 +27,6 @@ GEM
       rspec (>= 2.14)
     rspec-support (3.10.3)
     thor (1.2.1)
-    tzinfo (2.0.4)
-      concurrent-ruby (~> 1.0)
     webrick (1.7.0)
     yard (0.9.27)
       webrick (~> 1.7.0)
