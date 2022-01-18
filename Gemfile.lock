@@ -47,6 +47,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   barruun!
@@ -54,6 +55,9 @@ DEPENDENCIES
   rspec
   rspec-power_assert
   yard
+
+RUBY VERSION
+   ruby 3.0.3p157
 
 BUNDLED WITH
    2.2.32
