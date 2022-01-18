@@ -62,6 +62,21 @@ bucket-level: 'on'
 location: us-central1
 ```
 
+### BigQuery
+
+```
+Commands:
+  barruun bigquery dataset [FILEPATH]  # Create dataset
+  barruun bigquery help [COMMAND]      # Describe subcommands or one specific subcommand
+```
+
+#### Dataset
+
+```yaml
+name: foobar
+location: asia-northeast1
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
