@@ -7,10 +7,10 @@ module Barruun
 
     def call
       if exist?
+        puts "#{self.class.name} #{@config.name} already exists. Nothing to do."
+      else
         puts "#{self.class.name} #{@config.name} not found."
         create
-      else
-        puts "#{self.class.name} #{@config.name} already exists. Nothing to do."
       end
     end
 
