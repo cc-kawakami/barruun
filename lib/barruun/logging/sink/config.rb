@@ -12,7 +12,7 @@ module Barruun
         end
 
         def destination
-          @hash["destination"].gsub("\#\{project_id\}", @project_id)
+          @hash["destination"].gsub(":PROJECT_ID", @project_id)
         end
 
         def options

@@ -37,9 +37,11 @@ Commands:
 
 #### Sink
 
+Please set project id to `PROJECT_ID`.
+
 ```yaml
 name: foobar
-destination: bigquery.googleapis.com/projects/#{project_id}/datasets/test
+destination: bigquery.googleapis.com/projects/:PROJECT_ID/datasets/test
 log-filter: 'jsonPayload."event-data":*'
 ```
 
