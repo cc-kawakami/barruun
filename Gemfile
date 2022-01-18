@@ -1,8 +1,14 @@
 # frozen_string_literal: true
 
+ruby "3.0.3"
+
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in barruun.gemspec
 gemspec
 
-gem "rake", "~> 13.0"
+group :development do
+  gem "rake", "~> 13.0"
+  gem "rspec"
+  gem "rspec-power_assert"
+  gem "yard"
+end

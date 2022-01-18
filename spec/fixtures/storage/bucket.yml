@@ -1,0 +1,4 @@
+name: foobarbox
+class: regional
+bucket-level: 'on'
+location: us-central1

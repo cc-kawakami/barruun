@@ -1,0 +1,3 @@
+name: bounces
+destination: bigquery.googleapis.com/projects/#{project_id}/datasets/bounces
+log-filter: 'jsonPayload."event-data":*'
