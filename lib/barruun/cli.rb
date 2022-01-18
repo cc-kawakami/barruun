@@ -4,14 +4,14 @@ module Barruun
   class StorageCommand < Thor
     desc "bucket [FILEPATH]", "Create or update bucket"
     def bucket(file_path)
-      Barruun::Storage::Bucket.new(file_path).call
+      Barruun::Managers::Storage::Bucket.new(file_path).call
     end
   end
 
   class LoggingCommand < Thor
     desc "sink [FILEPATH]", "Create or update sink"
     def sink(file_path)
-      Barruun::Logging::Sink.new(file_path).call
+      Barruun::Managers::Logging::Sink.new(file_path).call
     end
   end
 

@@ -1,7 +1,7 @@
 module Barruun
-  module Storage
-    class Bucket
-      class Config
+  module Configurations
+    module Storage
+      class Bucket
         def initialize(hash)
           @hash = hash
         end
