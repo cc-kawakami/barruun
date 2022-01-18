@@ -1,3 +1,6 @@
+require_relative "./sink/config"
+require_relative "../utils"
+
 module Barruun
   module Logging
     class Sink

@@ -1,3 +1,5 @@
+require "yaml"
+
 module Barruun
   module Utils
     def initialize(file_path, config_klass = self.class::Config)

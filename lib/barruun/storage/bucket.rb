@@ -1,5 +1,5 @@
-require "yaml"
 require_relative "./bucket/config"
+require_relative "../utils"
 
 module Barruun
   module Storage
