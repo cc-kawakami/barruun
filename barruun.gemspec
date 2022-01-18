@@ -8,8 +8,10 @@ Gem::Specification.new do |spec|
   spec.authors = ["cc-kawakami"]
   spec.email = ["kawakami-moeki@colorfulcompany.co.jp"]
 
-  spec.summary = "Setup Google Cloud Platform"
-  spec.description = "Setup Google Cloud Platform"
+  spec.summary = "Barruun is a simple tool for Infrastructure as Code of Google Cloud Platform using `gcloud` command.
+"
+  spec.description = "Barruun is a simple tool for Infrastructure as Code of Google Cloud Platform using `gcloud` command.
+"
   spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["source_code_uri"] = "https://github.com/colorfulcompany/barruun"
