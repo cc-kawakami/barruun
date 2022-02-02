@@ -3,22 +3,22 @@ require "thor"
 module Barruun
   class StorageCommand < Thor
     desc "bucket [FILEPATH]", "Create bucket"
-    def bucket(file_path)
-      Barruun::Managers::Storage::Bucket.new(file_path).call
+    def bucket(values_filepath)
+      Barruun::Managers::Storage::Bucket.new(values_filepath).call
     end
   end
 
   class LoggingCommand < Thor
     desc "sink [FILEPATH]", "Create sink"
-    def sink(file_path)
-      Barruun::Managers::Logging::Sink.new(file_path).call
+    def sink(values_filepath)
+      Barruun::Managers::Logging::Sink.new(values_filepath).call
     end
   end
   
   class BigqueryCommand < Thor
     desc "dataset [FILEPATH]", "Create dataset"
-    def sink(file_path)
-      Barruun::Managers::Bigquery::Dataset.new(file_path).call
+    def dataset(values_filepath)
+      Barruun::Managers::Bigquery::Dataset.new(values_filepath).call
     end
   end
 

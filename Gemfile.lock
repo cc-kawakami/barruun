@@ -2,12 +2,14 @@ PATH
   remote: .
   specs:
     barruun (0.1.7)
+      shufu
       thor (~> 1.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.5.0)
+    dry-initializer (3.1.1)
     power_assert (1.1.7)
     rake (13.0.6)
     rspec (3.10.0)
@@ -26,6 +28,8 @@ GEM
       power_assert (~> 1.1.0)
       rspec (>= 2.14)
     rspec-support (3.10.3)
+    shufu (0.1.5)
+      dry-initializer
     thor (1.2.1)
     webrick (1.7.0)
     yard (0.9.27)

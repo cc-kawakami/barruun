@@ -1,18 +1,19 @@
-require_relative "../../configurations/bigquery/dataset"
-require_relative "../utils"
+require 'shufu'
 
 module Barruun
   module Managers
     module Bigquery
-      class Dataset
-        include Barruun::Managers::Utils
-
+      class Dataset < Barruun::Managers::Base
         def create
-          `bq #{location_string} mk --dataset #{options_string(@config.options)} #{@config.name}`
+          system(command(:create))
+        end
+
+        def update
+          puts "Nothing to do."
         end
 
         def exist?
-          `bq ls`.include?(@config.name)
+          `#{command(:list)}`.include?(@values[:name])
         end
       end
     end

@@ -1,0 +1,9 @@
+gcloud:
+  alpha:
+    storage:
+      buckets:
+        create:
+          name: :param
+          class: :equal
+          bucket-level: :equal
+          location: :equal

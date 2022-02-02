@@ -1,0 +1,5 @@
+bq:
+  mk:
+    --dataset:
+      name: :equal
+      location: :equal

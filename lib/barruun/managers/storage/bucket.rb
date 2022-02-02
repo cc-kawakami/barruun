@@ -1,18 +1,15 @@
-require_relative "../../configurations/storage/bucket"
-require_relative "../utils"
+require "shufu"
 
 module Barruun
   module Managers
     module Storage
-      class Bucket
-        include Barruun::Managers::Utils
-
+      class Bucket < Barruun::Managers::Base
         def create
-          `gcloud alpha storage buckets create #{options_string(@config.options)} #{@config.name}`
+          system(command(:create))
         end
 
         def exist?
-          `gcloud alpha storage buckets list --filter='name: #{@config.name}'`.include?(@config.name)
+          `#{command(:list)}`.include?(@values[:name])
         end
       end
     end

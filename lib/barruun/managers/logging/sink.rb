@@ -1,18 +1,17 @@
-require_relative "../../configurations/logging/sink"
-require_relative "../utils"
-
 module Barruun
   module Managers
     module Logging
-      class Sink
-        include Barruun::Managers::Utils
-
+      class Sink < Barruun::Managers::Base
         def create
-          `gcloud logging sinks create #{@config.name} #{@config.destination} #{options_string(@config.options)}`
+          system(command(:create))
+        end
+
+        def update
+          puts "Nothing to do."
         end
 
         def exist?
-          `gcloud logging sinks list --filter='name: #{@config.name}'`.include?(@config.name)
+          `#{command(:list)}`.include?(@values[:name])
         end
       end
     end
